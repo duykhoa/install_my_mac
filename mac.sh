@@ -6,7 +6,7 @@ then
 fi
 
 brew tap Homebrew/bundle
-brew bundle
+brew bundle install --verbose
 
 # Xcode agreement
 xcode-select --install
