@@ -5,7 +5,9 @@ then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
+# Install gem-bundler style for homebrew
 brew tap Homebrew/bundle
+# Install the dependencies
 brew bundle install --verbose
 
 # Xcode agreement
@@ -30,13 +32,17 @@ then
 fi
 
 # Generate ssh-key
-#ssh-keygen
+read -p "Do you want to generate a new ssh-key?" ssh_key
+if [ $ssh_key == "Y" ] || [ $ssh_key == "y" ]
+then
+  ssh-keygen
+fi
 
 # wait to ask key to github
 read -p "Press any key after adding your keygen to github"
 
 # install dot-files
-git clone http://github.com/duykhoa/dotfiles
+git clone http://github.com/duykhoa/dotfiles ~/dotfiles
 
 # restore mackup
 open /Applications/Dropbox.app/
