@@ -52,6 +52,17 @@ brew 'zsh'
 brew 'zsh-completions'
 brew 'nvm'
 brew 'imagemagick'
+brew 'gpg'
+
+# mysql
+brew 'homebrew/versions/mysql56'
+
+brew 'Caskroom/cask/java'
+
+# ES 1.7
+brew 'homebrew/versions/elasticsearch17'
+
+#brew 'elasticsearch'
 
 cask 'caffeine'
 cask 'spectacle'
@@ -60,7 +71,7 @@ cask 'dropbox'
 cask 'vlc'
 cask 'adobe-reader'
 cask 'google-chrome'
-# cask 'skype'
+cask 'skype'
 cask 'utorrent'
 cask 'postgres'
 cask 'megasync'
@@ -69,3 +80,6 @@ cask 'dockertoolbox'
 cask 'virtualbox'
 cask 'kdiff3'
 cask 'android-file-transfer'
+cask 'iterm2'
+cask 'slack'
+cask 'gitter'

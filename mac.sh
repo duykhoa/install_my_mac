@@ -1,9 +1,6 @@
 # install homebrew
 # check if homebrew is installed
-if [ ! command -v brew > /dev/null 2>&1 ]
-then
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-fi
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # Install gem-bundler style for homebrew
 brew tap Homebrew/bundle
@@ -45,7 +42,7 @@ read -p "Press any key after adding your keygen to github"
 git clone http://github.com/duykhoa/dotfiles ~/dotfiles
 
 # restore mackup
-open /Applications/Dropbox.app/
+open /opt/homebrew-cask/Caskroom/dropbox/latest/Dropbox.app
 read -p "Make sure Dropbox has sync all settings. Press any key to continue......"
 mackup restore
 
