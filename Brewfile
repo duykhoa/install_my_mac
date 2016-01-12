@@ -53,15 +53,16 @@ brew 'zsh-completions'
 brew 'nvm'
 brew 'imagemagick'
 brew 'gpg'
+brew 'npm'
 
 # mysql
-brew 'homebrew/versions/mysql56'
+#brew 'homebrew/versions/mysql56'
 
-brew 'Caskroom/cask/java'
+#java
+#brew 'Caskroom/cask/java'
 
 # ES 1.7
-brew 'homebrew/versions/elasticsearch17'
-
+#brew 'homebrew/versions/elasticsearch17'
 #brew 'elasticsearch'
 
 cask 'caffeine'
@@ -83,3 +84,4 @@ cask 'android-file-transfer'
 cask 'iterm2'
 cask 'slack'
 cask 'gitter'
+cask 'goofy'
